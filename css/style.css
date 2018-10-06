@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    font-family: arial, "Microsoft YaHei";
+    background-color: #FEFEFE;
+    color: #FEFEFE;
+}
+body ::-webkit-scrollbar {
+	height: 16px;
+	overflow: visible;
+	width: 16px;
+}
+body ::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .1);
+	background-clip: padding-box;
+	border: solid transparent;
+	min-height: 28px;
+	padding: 100px 0 0;
+	box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+	border-width: 1px 1px 1px 6px;
+}
+body ::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+body ::-webkit-scrollbar-button {
+	height: 0;
+	width: 0;
+}
+::-webkit-scrollbar-track {
+	background-clip: padding-box;
+	border: solid transparent;
+	border-width: 0 0 0 4px;
+}
+body ::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+body {
+	height: 100vh;
+	color: #222;
+	font-family: 'Open Sans', arial, sans-serif;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	padding: 2em;
+	background: -webkit-gradient(radial, center center, 500, center center, 1400, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.6))) #fff;
+	background: -moz-radial-gradient(farthest-side, rgba(0,0,0,0) 90%, rgba(0,0,0,0.2) 150%) #fff;
+	background: -webkit-radial-gradient(farthest-side, rgba(0,0,0,0) 90%, rgba(0,0,0,0.2) 150%) #fff;
+	background: -ms-radial-gradient(farthest-side, rgba(0,0,0,0) 90%, rgba(0,0,0,0.2) 150%) #fff;
+	background: -o-radial-gradient(farthest-side, rgba(0,0,0,0) 90%, rgba(0,0,0,0.2) 150%) #fff;
+	background: radial-gradient(farthest-side, rgba(0,0,0,0) 90%, rgba(0,0,0,0.2) 150%) #fff;
+	box-sizing: border-box;
+}
+#fileWrapper{
+	transition:all 0.5s ease;
+}
+#fileWrapper:hover{
+	opacity: 1!important;
+}
+
+#visualizer_wrapper{
+	text-align: center;
+}
+footer{
+	position: fixed;
+	bottom: 2px;
+	color:#aaa;
+}
+.fft {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -480px;
+  -webkit-box-reflect: below 5px -webkit-linear-gradient(top, transparent, transparent 50%, rgba(255,255,255,0.3));
+}
+
+audio {
+	background-color: #fff;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+	-moz-box-shadow: 2px 2px 4px 0px #006773;
+	-webkit-box-shadow:  2px 2px 4px 0px #006773;
+	box-shadow: 2px 2px 4px 0px #006773;
+	-moz-border-radius:7px 7px 7px 7px ;
+	-webkit-border-radius:7px 7px 7px 7px ;
+	border-radius:7px 7px 7px 7px ;
+}
+audio::-webkit-media-controls-panel {
+	background-color: #fff;
+}

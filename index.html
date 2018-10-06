@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="HTML5 Audio Spectrum Visualizer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML5 audio spectrum visualizer</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>   
+    <body>
+        <input type="file" id="input"/>
+        <audio id="audio" src="" controls controlslist="nodownload"></audio>
+        <div>
+            <canvas id="fft" class="fft" width="960" height="200"></canvas>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/visualizer.js"></script>
+    </body>
+</html>
